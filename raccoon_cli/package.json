@@ -1,0 +1,23 @@
+{
+  "name": "raccoon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/covelline/raccoon.git"
+  },
+  "author": "mironal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/covelline/raccoon/issues"
+  },
+  "homepage": "https://github.com/covelline/raccoon#readme",
+  "dependencies": {
+    "github": "^0.2.4",
+    "node-getopt": "^0.2.3"
+  }
+}
