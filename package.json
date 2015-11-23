@@ -1,0 +1,26 @@
+{
+  "name": "raccoon",
+  "version": "1.0.0",
+  "description": "GitHub で管理している issue の一部をリストアップして Markdown にしたりするアプリ。",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/covelline/raccoon.git"
+  },
+  "author": "mironal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/covelline/raccoon/issues"
+  },
+  "homepage": "https://github.com/covelline/raccoon",
+  "devDependencies": {
+    "electron-prebuilt": "^0.35.0"
+  },
+  "dependencies": {
+    "highlight.js": "^8.9.1"
+  }
+}

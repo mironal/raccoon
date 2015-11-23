@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Raccoon</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="node_modules/highlight.js/styles/default.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
+  </head>
+  <body>
+    <div class="pure-g content">
+      <form class="pure-form pure-form-aligned pure-u-1">
+        <fieldset>
+          <div class="pure-control-group">
+            <label for="repo-url">Repository URL</label>
+            <input id="repo-url" type="text" class="pure-input-2-3" placeholder="https://github.com/username/reponame">
+          </div>
+
+          <div class="pure-control-group">
+            <label for="api-token">Github API Token</label>
+            <input id="api-token" type="password" class="pure-input-2-3" placeholder="your API token">
+          </div>
+
+          <div class="pure-control-group">
+            <label for="label-name">Label name</label>
+            <input id="label-name" type="text" class="pure-input-2-3" placeholder="label name">
+          </div>
+
+
+          <div class="pure-controls">
+            <button id="gen-md" class="pure-button pure-button-primary">Generate markdown</button>
+          </div>
+        </fieldset>
+      </form>
+      <form class="pure-form pure-form-aligned pure-u-1">
+        <fieldset>
+          <div class="pure-control-group">
+            <label for="md-prefix">Prefix</label>
+            <input id="md-prefix" type="text" class="pure-input-2-3" placeholder="prefix" value="-">
+          </div>
+          <div class="pure-control-group">
+            <label for="md-header">Header</label>
+            <textarea id="md-header" class="pure-input-2-3" placeholder="# Header"></textarea>
+          </div>
+          <div class="pure-control-group">
+            <label for="md-footer">Footer</label>
+            <textarea id="md-footer" class="pure-input-2-3" placeholder="# Footer"></textarea>
+          </div>
+        </fieldset>
+      </form>
+      <div class="pure-u-1">
+        <pre><code  id="md-area" class="markdown"></code></pre>
+      </div>
+      <div class="pure-u-1">
+        <button id="copy-clipboard" class="pure-button pure-button-primary">Copy Clipboard</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
