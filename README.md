@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/mironal/raccoon.svg)](https://travis-ci.org/mironal/raccoon)
+
+[ ![Download](https://api.bintray.com/packages/mironal/Raccoon/raccoon/images/download.svg) ](https://bintray.com/mironal/Raccoon/raccoon/_latestVersion)
+
 # Raccoon
 
 GitHub で管理している任意のリポジトリにある issue の中で指定したラベルが付いているものだけをリストアップして Markdown に整形するあぷり。

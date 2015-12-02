@@ -1,0 +1,15 @@
+{
+    "package": {
+        "name": "Raccoon",
+        "repo": "generic",
+        "subject": "mironal"
+    },
+    "version": {
+        "name": "1.0.0"
+    },
+    "files":
+        [
+        {"includePattern": "Raccoon-darwin.zip", "uploadPattern": "Raccoon-darwin.zip"}
+        ],
+    "publish": true
+}

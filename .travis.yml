@@ -6,10 +6,9 @@ before_script:
 script:
 - make build
 deploy:
-  on:
-  all_branches: true
+  on: deploy
   provider: bintray
-  file: Raccoon-darwin.zip
+  file: bintray.json
   user: mironal
   key:
     secure: afVgtobEKGqkc7LQ5yn7zfeRZMr7L0jaZ70SfRPOdeRw9eeidgC1/adgi2dPaHMfwo+aS2bgT8vYq22J8hb/xyVxF/PCXSn/WKv/5GzaLBCzrL3obuH86XywQsh0WFCSVkZqvFfODSP2BEKoT12YOihfuQQY/jKvIX3pc73eKSkJp1JNURCrCryVJL3WVidaYHVWtFgQh5dvzfoWwcS42i3t5Z3j7M371a0qOFeFQN4rMc5JE6lxDYJy9i/TtQdOu8TRF1ddA2+aBpfr3oVkI6l3u5fbSNd3pvpnWd3L3JxGJTscm/f2M5vS3d/3s2H7z5LSEjOOclfY4lV7NG+OSznmo7IGCS5PYDnko3yMhb4OsikSQOrBtT6cgtRbf2kcjeRJMoo14N5b6ndCVU8li4OqvT+zRPKpXmO8JsVCJz8dBv35wb2RRKFQfghVtECvrAvRtYtOpL79B57Zv+huTdoFnh3pTzthbI7DK2tEQC0/6Iw8sEscsfSB5BBv4mu7YnNlel1U4Cz/T1Gf2vB1gIgI7tfZlkCF1CU0NQVxFEOp+igDH7jwt9q/SgOASykQRX4pPdrhXyiqyDgHRcOWPUJwk9vRPuVhvrdrtnHyG1Rm88v03t3CATw+yUTuA8Fu0XaSfldUGMK0Xid4saMHVYzUPNy/3IuT8++pIHIt6pc=
