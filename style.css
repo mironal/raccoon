@@ -1,7 +1,160 @@
-div.content {
-  padding: 1em;
-}
 
 #copy-clipboard {
   min-width: 8em;
+}
+
+div#alpha {
+  width: 26em;
+}
+
+body, input, textarea, button {
+  font-family: Avenir, HiraginoSans-W3, "Yu Gothic", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(48, 51, 54);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  height: 100%;
+  position: relative;
+}
+
+div#beta {
+  width: calc(100% - 26em);
+  background: #292C2F;
+  border-left: 1px solid #0E0F10;
+}
+
+#alpha, #beta {
+  position: relative;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+fieldset {
+  border: none;
+}
+
+form label {
+  min-width: 9em;
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+form input[type="text"],form input[type="password"] {
+  margin-bottom: 1em;
+}
+
+form input, form textarea {
+  background: #292C2F;
+  border: none;
+  color: white;
+}
+
+#alpha form input {
+  width: 19em;
+  padding: 0.5em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+}
+
+div#container {
+  display: flex;
+  min-height: 100%;
+}
+
+footer {
+  text-align: center;
+  height: 3em;
+  padding: 0.3em;
+  border-top: 1px solid #292C2F;
+  box-sizing: border-box;
+}
+
+footer .title {
+  font-size: 1.5em;
+  font-family: Damion;
+}
+
+button#gen-md {
+  border: none;
+  background: #29C46D;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  border-radius: 0.3em;
+  color: white;
+  cursor: pointer;
+}
+
+#alpha .controls {
+  text-align: right;
+  padding-right: 1em;
+}
+
+button#gen-md:hover {
+  background: #269E5B;
+}
+
+#beta .toolbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #43484D;
+}
+
+#beta .toolbar button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#beta .toolbar button:hover {
+  background: #3A3D40;
+}
+
+textarea, input, button {
+  -webkit-appearance: none;
+}
+
+form.optional-form {
+  padding-top: 1em;   
+  border-top: 1px solid #292C2F;
+}
+
+#alpha form {
+  margin-top: 1em;
+}
+
+#alpha form textarea {
+  display: block;
+  width: calc(100% - 1em);
+  padding: 0.5em;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  height: 5em;
+}
+
+.optional-form label {
+  color: gray;
+}
+
+#beta .content pre {
+  display: block;
+  margin: 0;
+}
+
+#md-area {
+  display: block;
+  background-color: transparent;
+  padding: 2em;
 }

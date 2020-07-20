@@ -2,58 +2,68 @@
 <html>
   <head>
     <title>Raccoon</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="node_modules/highlight.js/styles/default.css">
+    <link rel="stylesheet" href="node_modules/highlight.js/styles/monokai_sublime.css">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width,  initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div class="pure-g content">
-      <form class="pure-form pure-form-aligned pure-u-1">
+    <div id="container">
+    <div id="alpha">
+      <form>
         <fieldset>
-          <div class="pure-control-group">
+          <div>
             <label for="repo-url">Repository URL</label>
-            <input id="repo-url" type="text" class="pure-input-2-3" placeholder="https://github.com/username/reponame">
+            <input id="repo-url" type="text" placeholder="https://github.com/username/reponame">
           </div>
 
-          <div class="pure-control-group">
+          <div>
             <label for="api-token">Github API Token</label>
-            <input id="api-token" type="password" class="pure-input-2-3" placeholder="your API token">
+            <input id="api-token" type="password" placeholder="your API token">
           </div>
 
-          <div class="pure-control-group">
+          <div>
             <label for="label-name">Label name</label>
-            <input id="label-name" type="text" class="pure-input-2-3" placeholder="label name">
+            <input id="label-name" type="text" placeholder="label name">
           </div>
 
-
-          <div class="pure-controls">
-            <button id="gen-md" class="pure-button pure-button-primary">Generate markdown</button>
+          <div class="controls">
+            <button id="gen-md">Generate markdown</button>
           </div>
         </fieldset>
       </form>
-      <form class="pure-form pure-form-aligned pure-u-1">
+
+      <form class="optional-form">
         <fieldset>
-          <div class="pure-control-group">
+          <div>
             <label for="md-prefix">Prefix</label>
-            <input id="md-prefix" type="text" class="pure-input-2-3" placeholder="prefix" value="-">
+            <input id="md-prefix" type="text" placeholder="prefix" value="-">
           </div>
-          <div class="pure-control-group">
+
+          <div>
             <label for="md-header">Header</label>
-            <textarea id="md-header" class="pure-input-2-3" placeholder="# Header"></textarea>
+            <textarea id="md-header" placeholder="# Header"></textarea>
           </div>
-          <div class="pure-control-group">
+
+          <div>
             <label for="md-footer">Footer</label>
-            <textarea id="md-footer" class="pure-input-2-3" placeholder="# Footer"></textarea>
+            <textarea id="md-footer" placeholder="# Footer"></textarea>
           </div>
         </fieldset>
       </form>
-      <div class="pure-u-1">
-        <pre><code  id="md-area" class="markdown"></code></pre>
+
+      <footer><span class="title">Raccoon</span></footer>
+    </div>
+
+    <div id="beta">
+      <div class="content">
+        <pre><code id="md-area" class="markdown"></code></pre>
       </div>
-      <div class="pure-u-1">
-        <button id="copy-clipboard" class="pure-button pure-button-primary">Copy Clipboard</button>
+
+      <div class="toolbar">
+        <button id="copy-clipboard">Copy to Clipboard</button>
       </div>
+    </div>
     </div>
   </body>
   <script src="index.js"></script>
